@@ -1,0 +1,28 @@
+/* описания для main.c */
+ .text
+      .global Start_DSP
+      .global InA
+      .global InI
+      .global OutC
+
+
+/* сегмент кода */
+Start_DSP:MOVE (A0), R0.L
+          MOVE (A1), R2.L
+
+
+
+Do1:
+          J.ne Do1
+          MOVE R4.L, (A2)
+          STOP
+
+
+
+
+/* сегмент данных */
+ .data
+InA:  .word 0
+InI:  .word 0
+OutC: .word 0
+ .end

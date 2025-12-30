@@ -1,0 +1,32 @@
+----------------------------------------------------
+Tool Dir: C:\MCStudio_3M_NVCom02T\Tools4\
+SysInc Dir: C:\MCStudio_3M_NVCom02T\Tools4\include\;C:\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\;C:\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\elcore\;C:\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\machine\;C:\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\sys\;
+SysLib Dir: C:\MCStudio_3M_NVCom02T\Tools4\lib\;C:\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\;C:\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\eb\;C:\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\single\;C:\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\single\eb\;C:\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\soft-float\;C:\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\soft-float\eb\;C:\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\lib\;
+Work Dir: C:\Users\Vladislav\Desktop\2\
+Project Dirs: C:\Users\Vladislav\Desktop\2\;
+Include Dirs: 
+Library Dirs: 
+Set Environment Variable:
+PATH = C:\MCStudio_3M_NVCom02T\Tools4\bin;C:\MCStudio_3M_NVCom02T\Tools4\include\;C:\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\;C:\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\elcore\;C:\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\machine\;C:\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\sys\;C:\MCStudio_3M_NVCom02T\Tools4\lib\;C:\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\;C:\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\eb\;C:\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\single\;C:\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\single\eb\;C:\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\soft-float\;C:\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\soft-float\eb\;C:\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\lib\;C:\Users\Vladislav\Desktop\2\;C:\Users\Vladislav\Desktop\2\;
+COMPILER_PATH = ..\..\..\..\MCStudio_3M_NVCom02T\Tools4\bin;
+CPATH = ..\..\..\..\MCStudio_3M_NVCom02T\Tools4\include\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\elcore\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\machine\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\sys\;
+C_INCLUDE_PATH = ..\..\..\..\MCStudio_3M_NVCom02T\Tools4\include\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\elcore\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\machine\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\sys\;
+CPLUS_INCLUDE_PATH = ..\..\..\..\MCStudio_3M_NVCom02T\Tools4\include\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\elcore\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\machine\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\include\sys\;
+LIBRARY_PATH = ..\..\..\..\MCStudio_3M_NVCom02T\Tools4\lib\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\eb\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\single\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\single\eb\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\soft-float\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\lib\gcc-lib\mipsel-elf32\3.2.3\soft-float\eb\;..\..\..\..\MCStudio_3M_NVCom02T\Tools4\mipsel-elf32\lib\;
+----------------------------------------------------
+26.12.2025 17:26:10
+Build project: C:\Users\Vladislav\Desktop\2\RiscDsp.mcsproj
+Build Unit: RISC
+RISC Unit: mipsel-elf32-ld -EL -r -N -T RISC.xl   main.o  -o RISC
+Build Unit: DSP
+DSP File: elcore-elvis-elf-as -mcx8 -gstabs -al calc.s -o calc.o
+DSP Unit: elcore-elvis-elf-ld -e 0 -t -N -T DSP.xl calc.o  -o DSP.o
+DSP Unit: elcore-elvis-elf-objdump -D DSP.o
+DSP Unit: elcopy -L xxx DSP.o  DSP
+DSP Unit: elcore-elvis-elf-objdump -x DSP
+Project: mipsel-elf32-gcc -g -mdebug -msoft-float -EL -T RiscDsp.xl RISC DSP  -o RiscDsp.o
+Project: mipsel-elf32-objdump -s RiscDsp.o
+Project: mipsel-elf32-objdump -x  RiscDsp.o
+Project: mipsel-elf32-objdump --disassemble-all RiscDsp.o
+26.12.2025 17:26:13
+----------------------------------------------------

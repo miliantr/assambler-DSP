@@ -1,0 +1,45 @@
+ELCORE GAS  calc.s 			page 1
+
+
+   1              	/* описания для main.c */
+   2              	 .text
+   3              	      .global Start_DSP
+   4              	      .global InA
+   5              	      .global InB
+   6              	      .global OutC
+   7              	      .global InI
+   8              	
+   9              	
+  10              	/* сегмент кода */
+  11 0000 07801367 	Start_DSP:MOVE (A0), R0.L    /*A*/
+  12 0001 07849367 	          MOVE (A1), R2.L    /*B*/
+  13 0002 07899367 	          MOVE (A3), R4.L    /*I*/
+  14 0003 078D1367 	          MOVE (A2), R6.L    /*C*/
+  15 0004 000DFF00 	          MOVE 0, R6.L
+  15      00000000 
+  16              	
+  17              	Do1:
+  18 0006 020878B3 	          SUBL R0.L, R4.L, R8.L
+  19 0007 028878A4 	          ADDL R0.L, R4.L, R10.L
+  20 0008 431578F3 	          MPYL R8.L, R10.L, R12.D
+  21 0009 61800A24 	          ADDL R12.L, R6.L
+  22 000a 01087924 	          ADDL 1, R4.L
+  22      00000001 
+  23 000c 01087935 	          CMPL 6, R4.L
+  23      00000006 
+  24 000e 2800319D 	          J.ne Do1
+  25              	
+  26 000f 078D1267 	          MOVE R6.L, (A2)
+  27 0010 F80001BE 	          STOP
+  28              	
+  29              	
+  30              	
+  31              	/* сегмент данных */
+  32              	.data
+  33 0000 00000000 	InA:  .word 0
+  34 0001 00000000 	InB:  .word 0
+  35 0002 00000000 	InI:  .word 0
+  36 0003 00000000 	InTemp1:  .word 0
+  37 0004 00000000 	InTemp2:  .word 0
+  38 0005 00000000 	OutC: .word 0
+  39              	 .end

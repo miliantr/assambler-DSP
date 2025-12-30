@@ -1,0 +1,5 @@
+Unit, Type, File, Fsec, Padr, Psec
+RISC, RISC, main.c, text, 0x80000000, text
+RISC, RISC, main.c, data, 0x80000000, data
+DSP, DSP, calc.s, text, 0xb8440000, DSP
+DSP, DSP, calc.s, data, 0xb8400000, DSP

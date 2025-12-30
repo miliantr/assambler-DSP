@@ -1,0 +1,27 @@
+/* описания для main.c */
+ .text
+      .global Start_DSP
+      .global InA
+      .global InI
+      .global OutC
+
+
+/* сегмент кода */
+Start_DSP:MOVE (A0), R0.L
+          MOVE (A1), R2.L
+
+Do1:      SUBL R2.L,R0.L,R3.L
+          FMPY R3.L,R2.L,R4.L
+          INCL R2.L,R2.L
+          J.ne Do1
+          STOP
+
+
+
+
+/* сегмент данных */
+ .data
+InA:  .word 0
+InI:  .word 0
+OutC: .word 0
+ .end

@@ -1,0 +1,39 @@
+/* описания для main.c */
+ .text
+      .global Start_DSP
+      .global InA
+      .global InB
+      .global OutC
+      .global InI
+
+
+/* сегмент кода */
+Start_DSP:MOVE (A0), R0.L    /*A*/
+          MOVE (A1), R2.L    /*B*/
+          MOVE (A3), R4.L    /*I*/
+          MOVE (A2), R6.L    /*C*/
+          MOVE 0, R6.L
+
+Do1:
+          SUBL R0.L, R4.L, R8.L
+          ADDL R0.L, R4.L, R10.L
+          MPYL R8.L, R10.L, R12.D
+          ADDL R12.L, R6.L
+          ADDL 1, R4.L
+          CMPL 5, R4.L
+          J.ne Do1
+
+          MOVE R6.L, (A2)
+          STOP
+
+
+
+/* сегмент данных */
+.data
+InA:  .word 0
+InB:  .word 0
+InI:  .word 0
+InTemp1:  .word 0
+InTemp2:  .word 0
+OutC: .word 0
+ .end

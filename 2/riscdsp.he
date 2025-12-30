@@ -1,0 +1,419 @@
+
+RiscDsp.o:     file format elf32-littlemips
+RiscDsp.o
+architecture: mips:isa32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x80000134
+
+Program Header:
+0x70000000 off    0x00010720 vaddr 0x8000f720 paddr 0x8000f720 align 2**2
+         filesz 0x00000018 memsz 0x00000018 flags r--
+    LOAD off    0x00001000 vaddr 0x80000000 paddr 0x80000000 align 2**12
+         filesz 0x0000f738 memsz 0x0001da30 flags rwx
+    LOAD off    0x00011000 vaddr 0xb8400000 paddr 0xb8400000 align 2**12
+         filesz 0x00000018 memsz 0x00000018 flags rw-
+    LOAD off    0x00012000 vaddr 0xb8440000 paddr 0xb8440000 align 2**12
+         filesz 0x00000044 memsz 0x00000044 flags r-x
+private flags = 50000001: [no abi set] [mips32] [not 32bitmode]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000df68  80000000  80000000  00001000  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000aa0  8000df70  8000df70  0000ef70  2**4
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .ctors        00000008  8000ea10  8000ea10  0000fa10  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  3 .dtors        00000008  8000ea18  8000ea18  0000fa18  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  4 .eh_frame     00000004  8000ea20  8000ea20  0000fa20  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  5 .jcr          00000004  8000ea24  8000ea24  0000fa24  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  6 .reginfo      00000018  8000f720  8000f720  00010720  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA, LINK_ONCE_SAME_SIZE
+  7 .sbss         00000014  8000f738  8000f738  00010738  2**3
+                  ALLOC
+  8 .bss          0000e2e0  8000f750  8000f750  0001073c  2**4
+                  ALLOC
+  9 .DSP_text     00000044  b8440000  b8440000  00012000  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 10 .DSP_data     00000018  b8400000  b8400000  00011000  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+ 11 .pdr          00001660  00000000  00000000  00012044  2**2
+                  CONTENTS, READONLY
+ 12 .mdebug.abi32 00000000  00000000  00000000  000136a4  2**0
+                  CONTENTS, READONLY
+ 13 .debug_line   00001f18  00000000  00000000  000136a4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .mdebug       000020d8  00000000  00000000  000155bc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .stab         000000d8  00000000  00000000  00017694  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .stabstr      00000046  00000000  00000000  0001776c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .rodata       00000cf0  8000ea30  8000ea30  0000fa30  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+SYMBOL TABLE:
+80000000 l    d  .text	00000000 
+8000df70 l    d  .data	00000000 
+8000ea10 l    d  .ctors	00000000 
+8000ea18 l    d  .dtors	00000000 
+8000ea20 l    d  .eh_frame	00000000 
+8000ea24 l    d  .jcr	00000000 
+8000f720 l    d  .reginfo	00000000 
+8000f738 l    d  .sbss	00000000 
+8000f750 l    d  .bss	00000000 
+b8440000 l    d  .DSP_text	00000000 
+b8400000 l    d  .DSP_data	00000000 
+00000000 l    d  .pdr	00000000 
+00000000 l    d  .mdebug.abi32	00000000 
+00000000 l    d  .debug_line	00000000 
+00000000 l    d  .mdebug	00000000 
+00000000 l    d  .stab	00000000 
+00000000 l    d  .stabstr	00000000 
+8000ea30 l    d  .rodata	00000000 
+00000000 l    d  *ABS*	00000000 
+00000000 l    d  *ABS*	00000000 
+00000000 l    d  *ABS*	00000000 
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/gcc-3.2.3_withCpp/gcc/config/mips/crti.asm
+00000000 l    df *ABS*	00000000 <command line>
+00000000 l    df *ABS*	00000000 <built-in>
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/gcc-3.2.3_withCpp/gcc/config/mips/crti.asm
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/gcc-3.2.3_withCpp/gcc/crtstuff.c
+8000ea10 l     O .ctors	00000000 __CTOR_LIST__
+8000ea18 l     O .dtors	00000000 __DTOR_LIST__
+8000ea20 l     O .eh_frame	00000000 __EH_FRAME_BEGIN__
+8000ea24 l     O .jcr	00000000 __JCR_LIST__
+8000df74 l     O .data	00000000 p.0
+8000f750 l       .bss	00000001 completed.1
+80000000 l       .text	00000000 __do_global_dtors_aux
+80000090 l       .text	00000000 call___do_global_dtors_aux
+8000f758 l       .bss	00000018 object.2
+800000a8 l       .text	00000000 frame_dummy
+80000110 l       .text	00000000 call_frame_dummy
+00000000 l    df *ABS*	00000000 crt0_cygwin.S
+00000000 l    df *ABS*	00000000 config_mem.S
+00000000 l    df *ABS*	00000000 crt0_cygwin.S
+00000000 l    df *ABS*	00000000 regs.S
+00000000 l    df *ABS*	00000000 crt0_cygwin.S
+00000000 l    df *ABS*	00000000 <command line>
+00000000 l    df *ABS*	00000000 <built-in>
+00000000 l    df *ABS*	00000000 crt0_cygwin.S
+80000244 l     F .text	00000000 fpu_check
+80000154 l     F .text	00000000 zerobss
+800001a4 l     F .text	00000000 init
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/gcc-3.2.3_withCpp/gcc/crtstuff.c
+8000ea14 l     O .ctors	00000000 __CTOR_END__
+8000ea1c l     O .dtors	00000000 __DTOR_END__
+8000ea20 l     O .eh_frame	00000000 __FRAME_END__
+8000ea24 l     O .jcr	00000000 __JCR_END__
+800003a0 l       .text	00000000 __do_global_ctors_aux
+800003fc l       .text	00000000 call___do_global_ctors_aux
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/gcc-3.2.3_withCpp/gcc/config/mips/crtn.asm
+00000000 l    df *ABS*	00000000 <command line>
+00000000 l    df *ABS*	00000000 <built-in>
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/gcc-3.2.3_withCpp/gcc/config/mips/crtn.asm
+8000df80 l     O .data	000003f8 impure_data
+80000cdc l     F .text	00000000 malloc_extend_top
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/sbrk.c
+8000e7d0 l     O .data	00000004 heap_end.0
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/mc12/mc12-board.c
+80001870 l     F .text	00000000 calibrate_cpu
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/mc12/serial-mc12.c
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/mc12/uart-mc12.c
+8000e810 l     O .data	00000028 uart
+8000f770 l       .bss	0000000b uart_ctrl
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/mc12/sport-mc12.c
+8000e840 l     O .data	00000024 sport0_ctrl
+8000e864 l     O .data	00000024 sport1_ctrl
+8000e888 l     O .data	00000024 sport0
+8000e8ac l     O .data	00000024 sport1
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/mc12/timers-mc12.c
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/mc12/rtc_timer.c
+8000ea60 l     O .rodata	00000030 DAYS_IN_MONTH
+8000ea90 l     O .rodata	00000030 _DAYS_BEFORE_MONTH
+800028b8 l     F .text	00000000 validate_structure
+8000eac0 l     O .rodata	00000060 mon_lengths
+8000eb20 l     O .rodata	00000008 year_lengths
+8000e8d0 l     O .data	00000004 prev_tzenv
+8000f780 l       .bss	0000000b __tzname_std
+8000f790 l       .bss	0000000b __tzname_dst
+8000eb90 l     O .rodata	00000180 _ctype_b
+8000e940 l     O .data	00000004 p_environ
+80004040 l     F .text	00000000 eofread
+8000ed10 l     O .rodata	00000022 basefix.0
+8000e950 l     O .data	00000004 initial_env
+8000f188 l     O .rodata	00000030 lconv
+8000e970 l     O .data	00000004 charset
+80006250 l     F .text	00000000 lflush
+8000f2b0 l     O .rodata	00000010 blanks.0
+8000f2c0 l     O .rodata	00000010 zeroes.1
+80009458 l     F .text	00000000 cvt
+800095e0 l     F .text	00000000 exponent
+8000b094 l     F .text	00000000 quorem
+8000f500 l     O .rodata	0000000c p05.0
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/fstat.c
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/isatty.c
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/lseek.c
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/exceptions.c
+8000e980 l     O .data	00000078 handlers
+8000d828 l     F .text	00000000 tlb_refill_handler
+8000e9f8 l     O .data	00000004 in_except_mode
+8000e9fc l     O .data	00000004 flood_except_detect
+8000ea00 l     O .data	00000004 except_num
+8000d740 l     F .text	00000000 detect_exception_type
+8000d70c l     F .text	00000000 detect_device_interrupt
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/store_context.S
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/stackframe.h
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/asm_offset.h
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/stackframe.h
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/store_context.S
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/regs.S
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/store_context.S
+00000000 l    df *ABS*	00000000 <command line>
+00000000 l    df *ABS*	00000000 <built-in>
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/store_context.S
+8000f7a0 l       .bss	00000000 temp_stack
+800107a0 l       .bss	00000000 temp_stack_end
+8000d884 l       .text	00000000 do_nothing
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/except_api.c
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/mc12/read.c
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/mc12/write.c
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/mc12/close.c
+00000000 l    df *ABS*	00000000 C:/msys/1.0/home/2011_05_19/tools1/elcore-newlib/libgloss/mips/elcore/mc12/device_interrupt.c
+b8440018 l       .DSP_text	00000000 Do1
+b840000c l       .DSP_data	00000000 InTemp1
+b8400010 l       .DSP_data	00000000 InTemp2
+8000cbd0 g     F .text	00000000 _mprec_log10
+80001988 g     F .text	00000000 serial_fini
+8000f600 g     O .rodata	00000028 __mprec_tinytens
+800040c0 g     F .text	00000000 strcpy
+8000149c g     F .text	00000000 cleanup_glue
+8000bec8 g     F .text	00000000 _hi0bits
+8000022c g     F .text	00000000 __main
+8000b920 g     F .text	00000000 _lseek_r
+800096f0 g     F .text	00000000 _wcrtomb_r
+80006588 g     F .text	00000000 __sseek
+800057ac g     F .text	00000000 __sinit
+8000e8dc g     O .data	00000004 _daylight
+80005d30 g     F .text	00000000 _setlocale_r
+800058bc g     F .text	00000000 __sfmoreglue
+80007874 g     F .text	00000000 ungetc
+80003860 g     F .text	00000000 _tzset_r
+80000f18 g     F .text	00000000 __malloc_unlock
+80000224 g     F .text	00000000 __sizemem
+800015c0 g     F .text	00000000 init_board
+8000dc90 g     F .text	00000000 board_interrupt_2_device
+80006620 g     F .text	00000000 _strtod_r
+800022a0 g     F .text	00000000 rtc_interrupt
+8000f740 g     O .sbss	00000008 system_timezone
+8000bbc0 g     F .text	00000000 memmove
+80005954 g     F .text	00000000 _cleanup
+8000bcf0 g     F .text	00000000 _Balloc
+b8400014 g       .DSP_data	00000000 OutC
+8000ea40 g     O .rodata	0000000b uart_name
+8000df10 g     F .text	00000000 __errno
+800016bc g     F .text	00000000 fini_board
+80010a30 g     O .bss	0000a000 except_handlers
+8000c7d8 g     F .text	00000000 _d2b
+8000c000 g     F .text	00000000 _multiply
+8000d330 g     F .text	00000000 _fstat_r
+8000f738 g     O .sbss	00000004 errno
+8000e7f8 g     O .data	00000008 live_seconds
+800055cc g     F .text	00000000 __svfscanf
+8000cb28 g     F .text	00000000 _ratio
+8000ea30 g       *ABS*	00000000 _gp
+8000e8e8 g     O .data	00000004 __tznorth
+8000c970 g     F .text	00000000 _s2b
+8000ca90 g     F .text	00000000 _i2b
+80001cf0 g     F .text	00000000 uart_write
+80001704 g     F .text	00000000 set_extern_clock
+80000238 g     F .text	00000000 _mem_setup
+80001c4c g     F .text	00000000 uart_fini
+80005fb0 g     F .text	00000000 memcpy
+8000f630 g     O .rodata	00000008 __infinity
+80005934 g     F .text	00000000 _cleanup_r
+80005ef0 g     F .text	00000000 mbrtowc
+80005600 g     F .text	00000000 _vfscanf_r
+80000710 g     F .text	00000000 malloc
+800001e0 g     F .text	00000000 get_mem_info
+8000d460 g     F .text	00000000 isatty
+80005d00 g     F .text	00000000 iswspace
+8000f510 g     O .rodata	000000c8 __mprec_tens
+80001fc8 g     F .text	00000000 SportClose
+80005dc4 g     F .text	00000000 __locale_charset
+80002130 g     F .text	00000000 SportWrite
+8000f750 g       .bss	00000000 _bss_start
+8000e78c g     O .data	00000004 __malloc_top_pad
+8000443c g     F .text	00000000 strtoul
+8000df70 g     O .data	00000000 .hidden __dso_handle
+8000e960 g     O .data	00000004 __mb_cur_max
+80005dd0 g     F .text	00000000 _localeconv_r
+80000f20 g     F .text	00000000 _sbrk_r
+8000b980 g     F .text	00000000 __smakebuf
+8000cc30 g     F .text	00000000 _read_r
+8000e974 g     O .data	0000000c __lc_ctype
+8000b2d0 g     F .text	00000000 _fclose_r
+8000b420 g     F .text	00000000 fflush
+8000e794 g     O .data	00000004 __malloc_max_sbrked_mem
+8000e8e4 g     O .data	00000004 __tzyear
+8000d4f0 g     F .text	00000000 lseek
+8000ea34 g     O .rodata	00000004 _global_impure_ptr
+8000cc90 g     F .text	00000000 _realloc_r
+80001e10 g     F .text	00000000 SportOpen
+8000bf48 g     F .text	00000000 _lo0bits
+8000f5d8 g     O .rodata	00000028 __mprec_bigtens
+8000cac4 g     F .text	00000000 __mcmp
+8000e930 g     O .data	00000004 __ctype_ptr
+8000df20 g     F .text	00000000 _init
+8000d510 g     F .text	00000000 exceptions_init
+80003824 g     F .text	00000000 strtol
+80002054 g     F .text	00000000 SportRead
+8000f748 g     O .sbss	00000004 build_time
+80001360 g     F .text	00000000 _reclaim_reent
+8000e808 g     O .data	00000004 board_mask_register
+800074d0 g     F .text	00000000 strtod
+8000d210 g     F .text	00000000 isinf
+8000db90 g     F .text	00000000 write
+8000e8d4 g     O .data	00000008 _tzname
+8000e954 g     O .data	00000004 environ
+b8400004 g       .DSP_data	00000000 InB
+8000d390 g     F .text	00000000 fstat
+80002324 g     F .text	00000000 add_rtc_interrupt
+8000e964 g     O .data	00000004 __nlocale_changed
+8000de2c g     F .text	00000000 board_device_2_interrupt
+800014f0 g     F .text	00000000 _wrapup_reent
+00000000  w      *UND*	00000000 __deregister_frame_info
+80025a40 g       *ABS*	00000000 end
+80002350 g     F .text	00000000 _atoi_r
+8000c200 g     F .text	00000000 _pow5mult
+80001bf4 g     F .text	00000000 uart_init
+8000bae0 g     F .text	00000000 memchr
+800063c0 g     F .text	00000000 _sprintf_r
+80000f80 g     F .text	00000000 _free_r
+800097e0 g     F .text	00000000 _wcsrtombs_r
+800005a0 g     F .text	00000000 __call_exitprocs
+8000e968 g     O .data	00000004 __mlocale_changed
+80002430 g     F .text	00000000 mktime
+80001a30 g     F .text	00000000 UARTOpen
+8000e790 g     O .data	00000004 __malloc_sbrk_base
+80000134 g     F .text	00000000 _start
+8000db20 g     F .text	00000000 read
+80000490 g     F .text	00000000 __register_exitproc
+8001aa30 g     O .bss	00003000 registers_storage
+80004180 g     F .text	00000000 strncmp
+8000993c g     F .text	00000000 wcsrtombs
+80002220 g     F .text	00000000 setup_rtc_timer
+8000e79c g     O .data	00000028 __malloc_current_mallinfo
+8000db18 g     F .text	00000000 disable_interrupt
+8000b520 g     F .text	00000000 __sfvwrite
+800108b0 g     O .bss	00000024 build_date
+800042b0 g     F .text	00000000 _strtoul_r
+80009f60 g     F .text	00000000 _close_r
+80003f40 g     F .text	00000000 sscanf
+80005690 g     F .text	00000000 __sfp
+00000000 g       *ABS*	00000000 _dsp_LMA_
+8000e380 g     O .data	00000408 __malloc_av_
+800019fc g     F .text	00000000 serial_write
+80006490 g     F .text	00000000 __sread
+80005980 g     F .text	00000000 fread
+80000f10 g     F .text	00000000 __malloc_lock
+800015a0 g     F .text	00000000 sbrk
+8000d280 g     F .text	00000000 _calloc_r
+8000d9c0 g     F .text	00000000 set_new_handler
+80002370 g     F .text	00000000 memset
+80000280 g     F .text	0000011c main
+8000e798 g     O .data	00000004 __malloc_max_total_mem
+8000c63c g     F .text	00000000 _ulp
+b8400008 g       .DSP_data	00000000 InI
+800065f4 g     F .text	00000000 __sclose
+8000b3f0 g     F .text	00000000 fclose
+80003680 g     F .text	00000000 _strtol_r
+80002278 g     F .text	00000000 enable_rtc_timer
+80003e00 g     F .text	00000000 _findenv_r
+80009fc0 g     F .text	00000000 _dtoa_r
+80000760 g     F .text	00000000 _malloc_r
+80007798 g     F .text	00000000 __submore
+80005688 g     F .text	00000000 __env_unlock
+80005ba0 g     F .text	00000000 _fwalk
+80005f80 g     F .text	00000000 _mbtowc_r
+80001224 g     F .text	00000000 _malloc_trim_r
+b8400000 g       .DSP_data	00000000 InA
+80004050 g     F .text	00000000 strcmp
+8000db10 g     F .text	00000000 enable_interrupt
+80001db8 g     F .text	00000000 UARTWrite
+80001940 g     F .text	00000000 serial_init
+8000d5e4 g     F .text	00000000 interrupt_handler
+8000df48 g     F .text	00000000 _fini
+80009e40 g     F .text	00000000 __swsetup
+8000641c g     F .text	00000000 sprintf
+8000e96c g     O .data	00000004 _PathLocale
+800074fc g     F .text	00000000 strtof
+80000420 g     F .text	00000000 atexit
+800108e0 g     O .bss	00000144 ports
+80009de0 g     F .text	00000000 _write_r
+8000c6b0 g     F .text	00000000 _b2d
+80005ddc g     F .text	00000000 setlocale
+800063b0 g     F .text	00000000 nanf
+8000e378 g     O .data	00000004 _impure_ptr
+80002200 g     F .text	00000000 timer_interrupt
+80005e80 g     F .text	00000000 _mbrtowc_r
+8000e800 g     O .data	00000008 live_microseconds
+8000e7e4 g     O .data	00000004 file_desc
+80006290 g     F .text	00000000 isnan
+80001734 g     F .text	00000000 calibrate_time
+80001d54 g     F .text	00000000 UARTRead
+8000e8e0 g     O .data	00000004 _timezone
+8000e7f0 g     O .data	00000004 ext_oscilator_clock
+8000d260 g     F .text	00000000 nan
+80005e74 g     F .text	00000000 localeconv
+8000bda8 g     F .text	00000000 _multadd
+80025a30 g     O *ABS*	00000000 __stack
+800019d4 g     F .text	00000000 serial_read
+8000e7e0 g     O .data	00000004 n_ports
+80003fbc g     F .text	00000000 _sscanf_r
+8000f738 g       *ABS*	00000000 _edata
+80025a40 g       *ABS*	00000000 _end
+80005554 g     F .text	00000000 vfscanf
+8000e7e8 g     O .data	00000008 cpu_clocks_per_sec
+80001c88 g     F .text	00000000 uart_read
+800064f8 g     F .text	00000000 __swrite
+8000e788 g     O .data	00000004 __malloc_trim_threshold
+80001824 g     F .text	00000000 get_build_date
+80000450 g     F .text	00000000 exit
+80005c44 g     F .text	00000000 _fwalk_reent
+8000c478 g     F .text	00000000 __mdiff
+800062d0 g     F .text	00000000 __sccl
+80002330 g     F .text	00000000 atoi
+8000ec0f g     O .rodata	00000000 _ctype_
+80001d40 g     F .text	00000000 UARTClose
+800001d0 g     F .text	00000000 _exit
+00000000       O *UND*	00000000 __global
+80004160 g     F .text	00000000 strlen
+8000e8ec g     O .data	00000038 __tzrule
+800107a0 g     O .bss	0000000c __memsize
+80003d90 g     F .text	00000000 div
+800060c0 g     F .text	00000000 __srefill
+b8440000 g       .DSP_text	00000000 Start_DSP
+800107b0 g     O .bss	00000100 __lstack
+80009980 g     F .text	00000000 _wctomb_r
+80005680 g     F .text	00000000 __env_lock
+00000000  w      *UND*	00000000 _Jv_RegisterClasses
+800078a0 g     F .text	00000000 _vfprintf_r
+80004470 g     F .text	00000000 __svfscanf_r
+80003348 g     F .text	00000000 __tzcalc_limits
+8000f738 g       *ABS*	00000000 _fbss
+80007560 g     F .text	00000000 _ungetc_r
+00000000  w      *UND*	00000000 __register_frame_info
+80009758 g     F .text	00000000 wcrtomb
+8000dc00 g     F .text	00000000 close
+800096b8 g     F .text	00000000 vfprintf
+8000d844 g     F .text	00000000 main_handler
+80002ca0 g     F .text	00000000 _mktm_r
+8000c334 g     F .text	00000000 _lshift
+80000738 g     F .text	00000000 free
+8000c944 g     F .text	00000000 _Bfree
+80003f24 g     F .text	00000000 _getenv_r
+
+

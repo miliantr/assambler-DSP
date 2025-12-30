@@ -1,0 +1,17 @@
+SECTIONS {
+ _dsp_LMA_ = . ;
+ 
+ .DSP_text 0x00000000 : AT(_dsp_LMA_ )
+  {
+    calc.*(.text);
+  }
+ 
+ .DSP_data 0x00000000 : AT(_dsp_LMA_  + SIZEOF(.DSP_text))
+  {
+    calc.*(.data);
+  }
+ .DSP_bss :
+  {
+    *(COMMOM)
+  }
+ }

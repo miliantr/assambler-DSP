@@ -1,0 +1,13 @@
+Version = 00.01
+Entry Point = 0x80000134
+[Sections]
+Section0 = text.bin,80000000
+Section1 = data.bin,8000df40
+Section2 = ctors.bin,8000e9e0
+Section3 = dtors.bin,8000e9e8
+Section4 = eh_frame.bin,8000e9f0
+Section5 = jcr.bin,8000e9f4
+Section6 = reginfo.bin,8000f6f0
+Section7 = DSP_text.bin,b8440000
+Section8 = DSP_data.bin,b8400000
+Section9 = rodata.bin,8000ea00

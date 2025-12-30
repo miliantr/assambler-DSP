@@ -1,0 +1,102 @@
+30.12.2025 15:46:56
+------------------------------------------
+C:\MCStudio_3M_NVCom02T\
+------------------------------------------
+07.12.2010 19:02:22  492032   freeShell.exe
+13.07.2011 10:19:36  6051840   MCStudio.exe
+29.11.2025 21:30:52  714526   unins000.exe
+------------------------------------------
+.\MCDevice\
+------------------------------------------
+01.07.2011 15:22:04  2277278   libModel3MdbBridge.dll
+21.12.2010 17:07:58  15440   nv01m-dsp.cfg
+27.04.2011 11:27:14  21161   nv01m.cfg
+09.06.2011 11:17:28  8897   risc-obj.cfg
+11.05.2011 16:16:08  1271296   SimCore.dll
+21.12.2010 17:07:58  14982   vir-nv.cfg
+------------------------------------------
+.\Tools4\bin\
+------------------------------------------
+10.10.2002 17:11:02  151552   elconv.exe
+19.05.2011 17:48:34  811008   elconvb.exe
+19.05.2011 17:43:34  628808   elcopy.exe
+19.05.2011 17:42:16  479467   elcore-elvis-elf-addr2line.exe
+19.05.2011 17:42:04  452696   elcore-elvis-elf-ar.exe
+19.05.2011 17:42:54  925217   elcore-elvis-elf-as.exe
+19.05.2011 17:42:26  104330   elcore-elvis-elf-c++filt.exe
+19.05.2011 17:43:08  666034   elcore-elvis-elf-ld.exe
+19.05.2011 17:42:20  490690   elcore-elvis-elf-nm.exe
+19.05.2011 17:42:12  628808   elcore-elvis-elf-objcopy.exe
+19.05.2011 17:49:04  2052096   elcore-elvis-elf-objdump.exe
+19.05.2011 17:42:10  452696   elcore-elvis-elf-ranlib.exe
+19.05.2011 17:42:18  193954   elcore-elvis-elf-readelf.exe
+19.05.2011 17:42:00  434544   elcore-elvis-elf-size.exe
+19.05.2011 17:42:08  433135   elcore-elvis-elf-strings.exe
+19.05.2011 17:42:24  628808   elcore-elvis-elf-strip.exe
+12.07.2011 18:11:28  212992   ElfLib.dll
+21.05.2003 21:38:42  147968   make.exe
+19.05.2011 16:19:16  623928   mipsel-elf32-addr2line.exe
+19.05.2011 16:19:04  592899   mipsel-elf32-ar.exe
+19.05.2011 16:19:50  961258   mipsel-elf32-as.exe
+19.05.2011 17:25:58  115893   mipsel-elf32-c++.exe
+19.05.2011 17:26:00  82231   mipsel-elf32-c++filt.exe
+19.05.2011 17:26:34  115927   mipsel-elf32-cpp.exe
+19.05.2011 17:25:58  115893   mipsel-elf32-g++.exe
+19.05.2011 17:27:34  114321   mipsel-elf32-gcc.exe
+19.05.2011 17:26:06  40346   mipsel-elf32-gcov.exe
+19.05.2011 16:20:02  846964   mipsel-elf32-ld.exe
+19.05.2011 16:19:20  636578   mipsel-elf32-nm.exe
+19.05.2011 16:19:12  796410   mipsel-elf32-objcopy.exe
+19.05.2011 16:19:02  842941   mipsel-elf32-objdump.exe
+19.05.2011 16:19:10  592899   mipsel-elf32-ranlib.exe
+19.05.2011 16:19:18  221002   mipsel-elf32-readelf.exe
+19.05.2011 16:18:58  574545   mipsel-elf32-size.exe
+19.05.2011 16:19:08  573447   mipsel-elf32-strings.exe
+19.05.2011 16:19:24  796410   mipsel-elf32-strip.exe
+19.05.2011 17:45:54  57344   rm.exe
+22.04.2011 16:03:28  217088   Test.exe
+12.08.2005 11:21:34  5087232   XTP9100EvalLibd.dll
+------------------------------------------
+.\Tools432\bin\
+------------------------------------------
+10.10.2002 17:11:02  151552   elconv.exe
+19.05.2011 17:48:34  811008   elconvb.exe
+19.05.2011 17:43:34  628808   elcopy.exe
+19.05.2011 17:42:16  479467   elcore-elvis-elf-addr2line.exe
+19.05.2011 17:42:04  452696   elcore-elvis-elf-ar.exe
+19.05.2011 17:42:54  925217   elcore-elvis-elf-as.exe
+31.03.2003 17:52:38  1690860   elcore-elvis-elf-asold.exe
+19.05.2011 17:42:26  104330   elcore-elvis-elf-c++filt.exe
+19.05.2011 17:43:08  666034   elcore-elvis-elf-ld.exe
+19.05.2011 17:42:20  490690   elcore-elvis-elf-nm.exe
+19.05.2011 17:42:12  628808   elcore-elvis-elf-objcopy.exe
+19.05.2011 17:49:04  2052096   elcore-elvis-elf-objdump.exe
+19.05.2011 17:42:10  452696   elcore-elvis-elf-ranlib.exe
+19.05.2011 17:42:18  193954   elcore-elvis-elf-readelf.exe
+19.05.2011 17:42:00  434544   elcore-elvis-elf-size.exe
+19.05.2011 17:42:08  433135   elcore-elvis-elf-strings.exe
+19.05.2011 17:42:24  628808   elcore-elvis-elf-strip.exe
+12.07.2011 18:11:28  212992   ElfLib.dll
+21.05.2003 21:38:42  147968   make.exe
+12.03.2010 14:49:28  790441   mipsel-elf32-addr2line.exe
+12.03.2010 14:49:24  814017   mipsel-elf32-ar.exe
+12.03.2010 14:50:12  1269477   mipsel-elf32-as.exe
+12.03.2010 17:54:40  291955   mipsel-elf32-c++.exe
+12.03.2010 14:49:32  789002   mipsel-elf32-c++filt.exe
+12.03.2010 17:54:44  290947   mipsel-elf32-cpp.exe
+12.03.2010 17:54:40  291955   mipsel-elf32-g++.exe
+12.03.2010 17:54:54  288829   mipsel-elf32-gcc-4.4.3.exe
+12.03.2010 17:54:54  288829   mipsel-elf32-gcc.exe
+12.03.2010 17:54:42  81323   mipsel-elf32-gcov.exe
+12.03.2010 14:51:36  1127465   mipsel-elf32-ld.exe
+12.03.2010 14:49:30  803243   mipsel-elf32-nm.exe
+12.03.2010 14:49:28  966421   mipsel-elf32-objcopy.exe
+12.03.2010 14:49:24  1110445   mipsel-elf32-objdump.exe
+12.03.2010 14:49:26  814017   mipsel-elf32-ranlib.exe
+12.03.2010 14:49:28  333836   mipsel-elf32-readelf.exe
+12.03.2010 14:49:22  793798   mipsel-elf32-size.exe
+12.03.2010 14:49:26  791346   mipsel-elf32-strings.exe
+12.03.2010 14:49:32  966421   mipsel-elf32-strip.exe
+22.04.2011 16:03:28  217088   Test.exe
+12.08.2005 11:21:34  5087232   XTP9100EvalLibd.dll
+----------------------------------------------------

@@ -1,0 +1,207 @@
+GAS LISTING C:\Users\VLADIS~1\AppData\Local\Temp/ccLhPLP0.s 			page 1
+
+
+   1              		.file	1 "main.c"
+   2              		.section .mdebug.abi32
+   3              		.previous
+   4              		.stabs	"C:\\Users\\Vladislav\\Desktop\\4/",100,0,0,$Ltext0
+   5              		.stabs	"main.c",100,0,0,$Ltext0
+   6              		.text
+   7              	$Ltext0:
+   8              		.stabs	"gcc2_compiled.",60,0,0,0
+   9              		.stabs	"int:t1=r1;-2147483648;2147483647;",128,0,0,0
+  10              		.stabs	"char:t2=r2;0;127;",128,0,0,0
+  11              		.stabs	"long int:t3=r3;-2147483648;2147483647;",128,0,0,0
+  12              		.stabs	"unsigned int:t4=r4;000000000000000000000000;000000000000037777777777;",128,0,0,0
+  13              		.stabs	"long unsigned int:t5=r5;000000000000000000000000;000000000000037777777777;",128,0,0,0
+  14              		.stabs	"long long int:t6=@s64;r6;001000000000000000000000;000777777777777777777777;",128,0,0,0
+  15              		.stabs	"long long unsigned int:t7=@s64;r7;000000000000000000000000;001777777777777777777777;",128,
+  16              		.stabs	"short int:t8=@s16;r8;-32768;32767;",128,0,0,0
+  17              		.stabs	"short unsigned int:t9=@s16;r9;0;65535;",128,0,0,0
+  18              		.stabs	"signed char:t10=@s8;r10;-128;127;",128,0,0,0
+  19              		.stabs	"unsigned char:t11=@s8;r11;0;255;",128,0,0,0
+  20              		.stabs	"__int128_t:t12=@s128;r12;000000000000000000000000;0377777777777777777777777777777777;",128
+  21              		.stabs	"__uint128_t:t13=@s128;r13;000000000000000000000000;0377777777777777777777777777777777;",12
+  22              		.stabs	"float:t14=r1;4;0;",128,0,0,0
+  23              		.stabs	"double:t15=r1;8;0;",128,0,0,0
+  24              		.stabs	"long double:t16=r1;8;0;",128,0,0,0
+  25              		.stabs	"complex int:t17=s8real:1,0,32;imag:1,32,32;;",128,0,0,0
+  26              		.stabs	"complex float:t18=R3;8;0;",128,0,0,0
+  27              		.stabs	"complex double:t19=R4;16;0;",128,0,0,0
+  28              		.stabs	"complex long double:t20=R4;16;0;",128,0,0,0
+  29              		.stabs	"__builtin_va_list:t21=*22=22",128,0,0,0
+  30              		.stabs	"_Bool:t23=@s8;-16;",128,0,0,0
+  31              		.align	2
+  32              		.globl	main
+  33              	$LM1:
+   1:main.c        **** /****************************************************************
+   2:main.c        ****  *                       RISC_DSP project                       *
+   3:main.c        ****  *                                                              *
+   4:main.c        ****  *    Демонстрирует работу с DSP-ядром.                         *
+   5:main.c        ****  *    Вообще-то у NVCom-01 два DSP-ядра, но работа с ними       *
+   6:main.c        ****  *    полностью идентична. Поэтому здесь работаем только с      *
+   7:main.c        ****  *    ядром DSP0. Ну и, разумеется, с CPU-ядром -               *
+   8:main.c        ****  *    для управления DSP-ядрами                                 *
+   9:main.c        ****  *                                                              *
+  10:main.c        ****  ****************************************************************/
+  11:main.c        **** 
+  12:main.c        **** #include "nvcom_01.h"
+  13:main.c        **** 
+  14:main.c        **** // Адрес начала программы DSP-ядра
+  15:main.c        **** extern int Start_DSP;
+  16:main.c        **** extern Arr3[4,4];
+  17:main.c        **** main()
+  18:main.c        **** {
+  34              		.stabn	68,0,18,$LM1
+  35              		.ent	main
+  36              	main:
+  37              		.frame	$fp,32,$31		# vars= 24, regs= 1/0, args= 0, extra= 0
+  38              		.mask	0x40000000,-8
+  39              		.fmask	0x00000000,0
+GAS LISTING C:\Users\VLADIS~1\AppData\Local\Temp/ccLhPLP0.s 			page 2
+
+
+  40              	$LBB2:
+  41 0000 E0FFBD27 		subu	$sp,$sp,32
+  42 0004 1800BEAF 		sw	$fp,24($sp)
+  43 0008 21F0A003 		move	$fp,$sp
+  44              	$LM2:
+  19:main.c        ****   int Result[4];
+  20:main.c        ****   int i;
+  21:main.c        ****   int j;
+  22:main.c        **** // Останавливаем ядро 0
+  23:main.c        ****       DCSR(0)  = 0;
+  45              		.stabn	68,0,23,$LM2
+  46              		#.set	volatile
+  47 000c 48B8013C 		sw	$0,-1203240704
+  47      000120AC 
+  48              		#.set	novolatile
+  49              	$LM3:
+  24:main.c        ****       SR(0)    = 0;
+  50              		.stabn	68,0,24,$LM3
+  51              		#.set	volatile
+  52 0014 48B8013C 		sw	$0,-1203240700
+  52      040120AC 
+  53              		#.set	novolatile
+  54              	$LM4:
+  25:main.c        **** 
+  26:main.c        **** // Пишем в счётчик команд ядра 0
+  27:main.c        ****       PC(0)=((unsigned int)&Start_DSP - 0xb8440000)>>2;//(unsigned int)&PRAM)>>2;
+  55              		.stabn	68,0,27,$LM4
+  56 001c 0000033C 		la	$3,Start_DSP
+  56      00006324 
+  57 0024 BC47023C 		li	$2,1203503104			# 0x47bc0000
+  58 0028 21106200 		addu	$2,$3,$2
+  59 002c 82100200 		srl	$2,$2,2
+  60              		#.set	volatile
+  61 0030 48B8013C 		sw	$2,-1203240672
+  61      200122AC 
+  62              		#.set	novolatile
+  63              	$LM5:
+  28:main.c        **** 
+  29:main.c        **** // Пишем в первый сегмент памяти даннных XRAM
+  30:main.c        **** 
+  31:main.c        **** // Запускаем ядро 0
+  32:main.c        ****       DCSR(0) = 0x4000;
+  64              		.stabn	68,0,32,$LM5
+  65 0038 00400224 		li	$2,16384			# 0x4000
+  66              		#.set	volatile
+  67 003c 48B8013C 		sw	$2,-1203240704
+  67      000122AC 
+  68              		#.set	novolatile
+  69              	$LM6:
+  33:main.c        **** 
+  34:main.c        **** // ждем окончания процедуры
+  35:main.c        ****       while( !(QSTR_DSP & (1<<3)) ) ;
+  70              		.stabn	68,0,35,$LM6
+  71              	$L2:
+  72              		#.set	volatile
+  73 0044 48B8023C 		lw	$2,-1203236860
+  73      0410428C 
+GAS LISTING C:\Users\VLADIS~1\AppData\Local\Temp/ccLhPLP0.s 			page 3
+
+
+  74              		#.set	novolatile
+  75 004c 08004230 		andi	$2,$2,0x8
+  76 0050 FCFF4010 		beq	$2,$0,$L2
+  76      00000000 
+  77              	$LM7:
+  36:main.c        **** 
+  37:main.c        **** for(i=0;i<4;i++){
+  78              		.stabn	68,0,37,$LM7
+  79 0058 1000C0AF 		sw	$0,16($fp)
+  80              	$L5:
+  81 005c 1000C28F 		lw	$2,16($fp)
+  82 0060 04004228 		slt	$2,$2,4
+  83 0064 03004014 		bne	$2,$0,$L8
+  83      00000000 
+  84 006c 38000008 		j	$L6
+  84      00000000 
+  85              	$L8:
+  86              	$LM8:
+  38:main.c        ****         for(j=0;j<4;j++){
+  87              		.stabn	68,0,38,$LM8
+  88 0074 1400C0AF 		sw	$0,20($fp)
+  89              	$L9:
+  90 0078 1400C28F 		lw	$2,20($fp)
+  91 007c 04004228 		slt	$2,$2,4
+  92 0080 03004014 		bne	$2,$0,$L12
+  92      00000000 
+  93 0088 33000008 		j	$L7
+  93      00000000 
+  94              	$L12:
+  95              	$LM9:
+  39:main.c        ****                 Result[i,j] = Arr3[i,j];}}
+  96              		.stabn	68,0,39,$LM9
+  97 0090 1400C28F 		lw	$2,20($fp)
+  98 0094 80100200 		sll	$2,$2,2
+  99 0098 21205E00 		addu	$4,$2,$fp
+ 100 009c 1400C28F 		lw	$2,20($fp)
+ 101 00a0 80180200 		sll	$3,$2,2
+ 102 00a4 0000023C 		la	$2,Arr3
+ 102      00004224 
+ 103 00ac 21106200 		addu	$2,$3,$2
+ 104 00b0 0000428C 		lw	$2,0($2)
+ 105 00b4 000082AC 		sw	$2,0($4)
+ 106              	$LM10:
+ 107              		.stabn	68,0,38,$LM10
+ 108 00b8 1400C28F 		lw	$2,20($fp)
+ 109 00bc 01004224 		addu	$2,$2,1
+ 110 00c0 1400C2AF 		sw	$2,20($fp)
+ 111 00c4 1E000008 		j	$L9
+ 111      00000000 
+ 112              	$LM11:
+ 113              		.stabn	68,0,37,$LM11
+ 114              	$L7:
+ 115 00cc 1000C28F 		lw	$2,16($fp)
+ 116 00d0 01004224 		addu	$2,$2,1
+ 117 00d4 1000C2AF 		sw	$2,16($fp)
+ 118 00d8 17000008 		j	$L5
+ 118      00000000 
+GAS LISTING C:\Users\VLADIS~1\AppData\Local\Temp/ccLhPLP0.s 			page 4
+
+
+ 119              	$L6:
+ 120              		.set	noreorder
+ 121 00e0 00000000 		nop
+ 122              		.set	reorder
+ 123              	$LM12:
+  40:main.c        **** // "лишний" оператор для установки контрольной точки, чтобы посмотреть значения переменных
+  41:main.c        ****       while (1) ;
+ 124              		.stabn	68,0,41,$LM12
+ 125              	$L13:
+ 126 00e4 39000008 		j	$L13
+ 126      00000000 
+ 127              	$LBE2:
+ 128              	$LM13:
+  42:main.c        **** };
+ 129              		.stabn	68,0,42,$LM13
+ 130              		.end	main
+ 131              		.stabs	"main:F1",36,0,18,main
+ 132              		.stabs	"Result:24=ar25=r25;000000000000000000000000;000000000000037777777777;;0;3;1",128,0,19,-32
+ 133              		.stabs	"i:1",128,0,20,-16
+ 134              		.stabs	"j:1",128,0,21,-12
+ 135              		.stabn	192,0,0,$LBB2
+ 136              		.stabn	224,0,0,$LBE2
+ 137              	$Lscope0:
+ 138 00ec 00000000 		.stabs	"",36,0,0,$Lscope0-main
